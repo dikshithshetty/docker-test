@@ -17,3 +17,5 @@ COPY ./index.html /usr/share/nginx/html/index.html
 
 # COPY docker/nginx/nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80
+
+CMD service nginx start
