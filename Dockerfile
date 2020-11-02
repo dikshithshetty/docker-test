@@ -8,5 +8,11 @@ ARG PHP_VERSION=7.4-fpm
 # Nginx
 #
 FROM nginx:$NGINX_VERSION
+COPY ./index.html /usr/share/nginx/html/index.html
+# COPY docker/nginx/default.conf /etc/nginx/conf.d/
 
-WORKDIR /app
+#WORKDIR /app
+
+# COPY public/index.php /app/public/index.php
+
+# COPY docker/nginx/nginx.conf /etc/nginx/nginx.conf
