@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx:1.19.3
 COPY default.conf.template /etc/nginx/conf.d/default.conf.template
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY index.html /usr/share/nginx/html
